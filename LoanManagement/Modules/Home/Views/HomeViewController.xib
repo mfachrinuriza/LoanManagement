@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="LoanManagement" customModuleProvider="target">
+            <connections>
+                <outlet property="tabs" destination="zXg-xs-5OV" id="78O-7Q-zmf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PQ8-8C-vBM">
+                    <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="eRR-PP-yFI">
+                            <rect key="frame" x="16" y="20" width="361" height="354"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="r2C-7d-9eW">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="37.666666666666664"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VzT-ec-9o3">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="14.333333333333334"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcb-4i-LwR">
+                                            <rect key="frame" x="0.0" y="18.333333333333329" width="361" height="19.333333333333329"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ReL-rw-Hz7" customClass="CustomUIView" customModule="LoanManagement" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="53.66666666666665" width="361" height="108.33333333333331"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Loan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNU-IX-8Mb">
+                                            <rect key="frame" x="12" y="12" width="337" height="14.333333333333336"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rp.20.000.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jq7-gE-Ijw">
+                                            <rect key="frame" x="12" y="38.333333333333343" width="337" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Borrowers: 15.245" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJC-QO-u2V">
+                                            <rect key="frame" x="12" y="82" width="337" height="14.333333333333329"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" name="Primary10"/>
+                                    <constraints>
+                                        <constraint firstItem="jq7-gE-Ijw" firstAttribute="top" secondItem="XNU-IX-8Mb" secondAttribute="bottom" constant="12" id="0cq-IC-G3b"/>
+                                        <constraint firstAttribute="trailing" secondItem="yJC-QO-u2V" secondAttribute="trailing" constant="12" id="CrU-in-PHN"/>
+                                        <constraint firstAttribute="trailing" secondItem="jq7-gE-Ijw" secondAttribute="trailing" constant="12" id="Nki-cg-yEb"/>
+                                        <constraint firstAttribute="width" secondItem="ReL-rw-Hz7" secondAttribute="height" multiplier="5:1.5" id="cTp-11-G2F"/>
+                                        <constraint firstItem="XNU-IX-8Mb" firstAttribute="leading" secondItem="ReL-rw-Hz7" secondAttribute="leading" constant="12" id="enE-fm-xcO"/>
+                                        <constraint firstAttribute="trailing" secondItem="XNU-IX-8Mb" secondAttribute="trailing" constant="12" id="tAM-Z7-fx4"/>
+                                        <constraint firstItem="jq7-gE-Ijw" firstAttribute="leading" secondItem="ReL-rw-Hz7" secondAttribute="leading" constant="12" id="uxP-YM-bKw"/>
+                                        <constraint firstItem="XNU-IX-8Mb" firstAttribute="top" secondItem="ReL-rw-Hz7" secondAttribute="top" constant="12" id="wvA-PV-ey2"/>
+                                        <constraint firstItem="yJC-QO-u2V" firstAttribute="leading" secondItem="ReL-rw-Hz7" secondAttribute="leading" constant="12" id="wzs-HR-UqE"/>
+                                        <constraint firstAttribute="bottom" secondItem="yJC-QO-u2V" secondAttribute="bottom" constant="12" id="yvm-y6-BWI"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                            <color key="value" name="Primary20"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                            <color key="value" name="Primary30"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zXg-xs-5OV" customClass="Tabs" customModule="LoanManagement" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="178" width="361" height="32"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="32" id="V5q-B7-W7o"/>
+                                    </constraints>
+                                </view>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="128" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vpc-Pl-E8i" customClass="FittedCollectionView" customModule="LoanManagement" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="226" width="361" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4gm-R7-pVK">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="eRR-PP-yFI" firstAttribute="top" secondItem="PQ8-8C-vBM" secondAttribute="top" constant="20" id="7Q3-sl-Q5q"/>
+                        <constraint firstAttribute="trailing" secondItem="eRR-PP-yFI" secondAttribute="trailing" constant="16" id="CEU-Uc-Blr"/>
+                        <constraint firstAttribute="bottom" secondItem="eRR-PP-yFI" secondAttribute="bottom" constant="50" id="d8d-9h-aNB"/>
+                        <constraint firstItem="eRR-PP-yFI" firstAttribute="centerX" secondItem="PQ8-8C-vBM" secondAttribute="centerX" id="ij9-b8-tDr"/>
+                        <constraint firstItem="eRR-PP-yFI" firstAttribute="leading" secondItem="PQ8-8C-vBM" secondAttribute="leading" constant="16" id="rCe-CR-6qz"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="PQ8-8C-vBM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="CLy-Zr-O3R"/>
+                <constraint firstItem="PQ8-8C-vBM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="DfV-ej-5As"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PQ8-8C-vBM" secondAttribute="trailing" id="QEs-ve-bPt"/>
+                <constraint firstAttribute="bottom" secondItem="PQ8-8C-vBM" secondAttribute="bottom" id="nJt-RI-zQY"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Primary10">
+            <color red="0.42352941176470588" green="0.6470588235294118" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Primary20">
+            <color red="0.21176470588235294" green="0.54509803921568623" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Primary30">
+            <color red="0.066666666666666666" green="0.47058823529411764" blue="0.83137254901960789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
